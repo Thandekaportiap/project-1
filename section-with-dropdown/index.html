@@ -31,23 +31,59 @@
             <li><a href="#">Careers</a></li>
             <li><a href="#">About</a></li>
             <li> <a href="#"> Log in </a></li>
-            <li><a href="#"><button class="btn">Register</button></a></li>
+            <li><a href="#"><button class="btn" id="showFormButton">Register</button></a></li>
           </ul>
     </div>
+
+    <!-- Registration form -->
+  <form class="registration-form"
+  action="https://formspree.io/f/mpzvgdle"
+  method="POST"
+>
+<label>
+  Your Name:
+  <input type="text" name="Name">
+</label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your Address:
+    <input type="address" name="address">
+  </label>
+  <label>
+    Phone Number:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Occupation:</label>
+<select>
+  <option value="Sales">Sales</option>
+  <option value="Education">Education</option>
+  <option value="Lawyer">Lawyer</option>
+  <option value="Computer Programmer">Computer Programmer</option>
+  <option value="Student">Student</option>
+</select>
+  <button id="send" type="submit">Send</button>
+  </form>
+
+  <!-- main content section -->
     <section class="main">
         <h1>Make<br>remote work</h1>
-        <h5>Get your team insync, no matter your locatin<br>
+        <h4>Get your team insync, no matter your locatin<br>
         Stremline processes, create team retuals and <br>
-    watch productivity soar</h5>
+    watch productivity soar</h4>
 
     <button id="btn">Lean More</button>
 
-    <div>
-        <img src="images/client-databiz.svg" alt="">
-        <img src="images/client-audiophile.svg" alt="">
-        <img src="images/client-meet.svg" alt="">
-        <img src="images/client-maker.svg" alt="">
+    <div class="icons">
+        <a href="#"><img src="images/client-databiz.svg" alt=""></a>
+        <a href="#"><img src="images/client-audiophile.svg" alt=""></a>
+        <a href="#"><img src="images/client-meet.svg" alt=""></a>
+        <a href="#"><img src="images/client-maker.svg" alt=""></a>
     </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
