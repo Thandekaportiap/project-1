@@ -13,3 +13,4 @@ showFormButton.addEventListener('click', function() {
     registrationForm.style.display = 'none';
   }
 });
+
